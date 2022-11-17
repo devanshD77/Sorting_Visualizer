@@ -33,8 +33,9 @@ function generateArray() {
         divs[i] = document.createElement("div");
         container.append(divs[i]);
         marginSize = 0.1;
-        divs[i].style=`padding-top: 3px ;border-radius: 4px 4px 0px 0px; text-align:center; color: white; margin: ${marginSize}%; background-color: ${initialColor}; width: ${(100/arraySize - (2*marginSize))}%; height: ${(divHeights[i])}%;`;
         divs[i].innerText=divHeights[i];
+        divs[i].style=`padding-top: 3px ;border-radius: 4px 4px 0px 0px; text-align:center; color: white; margin: ${marginSize}%; background-color: ${initialColor}; width: ${(100/arraySize - (2*marginSize))}%; height: ${(divHeights[i])}%;`;
+        
     }
 }
 
