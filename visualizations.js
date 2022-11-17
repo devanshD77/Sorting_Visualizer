@@ -18,5 +18,8 @@ const heightUpdate = function(div1, divHeight1, div2, divHeight2) {
     setTimeout(() => {
         div1.style.height = `${divHeight1}%`;
         div2.style.height = `${divHeight2}%`;
+        div1.innerHTML = `${divHeight1}`;
+        div2.innerHTML = `${divHeight2}`;
+
     }, currDelay += delayTime)
 }
